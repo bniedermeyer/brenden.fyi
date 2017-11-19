@@ -4,7 +4,7 @@
 @import '~@angular/material/theming';
 @import 'theme';
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-
+@import url('https://fonts.googleapis.com/css?family=Dosis|Open+Sans');
 // material theme
 @include mat-core();
 @include angular-material-theme($theme);
@@ -21,4 +21,20 @@ html, body, app-root, mat-sidenav-container, router-outlet {
 
 mat-sidenav {
   background-color: mat-color($primary) !important;
+}
+
+html, body {
+  font-size: 14px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Dosis', sans-serif;
+}
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
 }

@@ -1,0 +1,87 @@
+@mixin parallaxBackground($backgroundImgPath, $fade: false) {
+  @if $fade == true {
+    background-image: url($backgroundImgPath);
+    opacity: 0.7;
+  } @else {
+    background-image: url($backgroundImgPath);
+  }
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  // help mobile devices
+  @media only screen and (max-device-width: 1024px) {
+    background-attachment: scroll;
+  }
+}
+
+$section-header-color: #c8d9db;
+
+h1 {
+  font-size: 5em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+
+h1, h2, h3 {
+  margin: .25em;
+  text-shadow: 1px 2px #2a373f;
+  text-align: center;
+}
+
+
+h2 {
+  font-size: 3em;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+
+.greeting-section {
+  @include parallaxBackground('/assets/img/pilatus_background.png', true);
+
+  .greeting {
+    color: $section-header-color;
+
+    #greeting-text {
+      p {
+        font-size: 1.75em;
+      }
+    }
+  }
+}
+
+.skill-section {
+  height: 200px;
+
+  .skill {
+    width: 100px;
+    height: auto;
+    color: black;
+  }
+}
+
+.projects-section {
+  @include parallaxBackground('/assets/img/computer_background.png');
+
+  height: 100%;
+  padding: 10px 30px;
+  color: $section-header-color;
+
+  img {
+    width: auto;
+    height: 300px;
+  }
+  .projects {
+    padding: 0 15px;
+  }
+}
+
+

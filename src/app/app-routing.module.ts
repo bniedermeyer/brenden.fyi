@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ResumeComponent } from './resume/resume.component';
+import { IntroComponent } from './intro/intro.component';
 
 const routes: Routes = [
   // {
@@ -9,6 +10,10 @@ const routes: Routes = [
   // }
   {
     path: '',
+    component: IntroComponent
+  },
+  {
+    path: 'resume',
     component: ResumeComponent
   }
 ];
