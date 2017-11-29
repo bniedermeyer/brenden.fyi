@@ -59,7 +59,7 @@ h3 {
 }
 
 .skill-section {
-  height: 200px;
+ padding: 20px 50px;
 
   .skill {
     width: 100px;
@@ -71,13 +71,13 @@ h3 {
 .projects-section {
   @include parallaxBackground('/assets/img/computer_background.png');
 
-  height: 100%;
-  padding: 10px 30px;
+  width: 100%;
+  padding: 50px 30px;
   color: $section-header-color;
 
   img {
     width: auto;
-    height: 300px;
+    height: 250px;
   }
   .projects {
     padding: 0 15px;

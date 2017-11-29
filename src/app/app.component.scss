@@ -14,7 +14,12 @@ mat-sidenav-container {
 
   mat-sidenav {
     padding: 10px;
+    width: 225px !important;
   }
+  .mat-drawer-content {
+    margin-right: 225px !important;
+  }
+
   router-outlet {
     margin: 0;
   }

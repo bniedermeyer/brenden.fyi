@@ -6,28 +6,36 @@
   </div>
 </div>
 <div id="skill-section" class="skill-section" fxLayout="column" fxLayoutAlign="center center">
-  <div class="skills" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
-    <img src="/assets/img/logos/html5.png"
-         alt="html5 logo" class="skill">
-    <img src="/assets/img/logos/sass.png"
-         alt="sass logo" class="skill">
-    <img src="/assets/img/logos/nodejs.png"
-         alt="nodejs logo" class="skill">
-    <img src="/assets/img/logos/express.png"
-         alt="express logo" class="skill">
-    <img src="/assets/img/logos/typescript.png"
-         alt="typescript logo" class="skill">
-    <img src="/assets/img/logos/angular.png"
-         alt="angular logo" class="skill">
-    <img src="/assets/img/logos/jquery.png"
-         alt="jquery logo" class="skill">
-    <img src="/assets/img/logos/google.png"
-         alt="google cloud logo" class="skill">
+  <div class="skills" fxLayout="row" fxLayoutAlign="center center" fxLayout.lt-md="column" fxLayoutAlign.lt-md="start center" fxLayoutGap="10px">
+    <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="10px" fxLayoutGap.lt-md="30px">
+      <img src="/assets/img/logos/html5.png"
+               alt="html5 logo" class="skill">
+      <img src="/assets/img/logos/sass.png"
+           alt="sass logo" class="skill">
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px" fxLayoutGap.lt-md="30px">
+      <img src="/assets/img/logos/nodejs.png"
+               alt="nodejs logo" class="skill">
+      <img src="/assets/img/logos/express.png"
+           alt="express logo" class="skill">
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px" fxLayoutGap.lt-md="30px">
+      <img src="/assets/img/logos/typescript.png"
+               alt="typescript logo" class="skill">
+      <img src="/assets/img/logos/angular.png"
+           alt="angular logo" class="skill">
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px" fxLayoutGap.lt-md="30px">
+      <img src="/assets/img/logos/jquery.png"
+               alt="jquery logo" class="skill">
+      <img src="/assets/img/logos/google.png"
+           alt="google cloud logo" class="skill">
+    </div>
   </div>
 </div>
 <div id="projects-section" class="projects-section" fxLayout="column" fxLayoutAlign="center center">
     <h1>A few things I've created</h1>
-    <div class="projects" fxLayout="row" fxFlexAlign="space-around center" fxLayoutGap="40px">
+    <div class="projects" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign.lt-md="start center" fxFlexAlign="space-around center" fxLayoutGap="40px">
       <div id="pomodoro" class="project">
         <a href="https://s.codepen.io/bniedermeyer/debug/xwqBOM/NQAzYnWyPdmr">
           <img src="/assets/img/pomodoro.png" alt="pomodoro project"></a>
