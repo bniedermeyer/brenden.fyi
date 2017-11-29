@@ -17,7 +17,7 @@
     </div>
   </mat-toolbar>
   <!--Sidebar for non-mobile layouts-->
-  <mat-sidenav #sidenav [opened]="opened" [mode]="navbarMode" align="end" fxFlex fxLayout="column"
+  <mat-sidenav #sidenav [opened]="opened" [mode]="navbarMode" align="end" fxLayout="column"
               fxLayoutAlign="center center">
     <mat-list-item class="mat-title">Brenden Niedermeyer</mat-list-item>
     <mat-list-item><a href="#" class="mat-title">Home</a></mat-list-item>
@@ -32,5 +32,5 @@
     </mat-list-item>
   </mat-sidenav>
   <!--main site content-->
-  <router-outlet></router-outlet>
+  <router-outlet fxFlex></router-outlet>
 </mat-sidenav-container>

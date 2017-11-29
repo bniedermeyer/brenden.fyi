@@ -5,7 +5,7 @@
   } @else {
     background-image: url($backgroundImgPath);
   }
-  height: 100%;
+  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -15,9 +15,17 @@
   @media only screen and (max-device-width: 1024px) {
     background-attachment: scroll;
   }
+
+
+/*  @media only screen and (max-width: 960px) {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }*/
 }
 
 $section-header-color: #c8d9db;
+
+
 
 h1 {
   font-size: 5em;
@@ -60,6 +68,7 @@ h3 {
 
 .skill-section {
  padding: 20px 50px;
+  margin: 0;
 
   .skill {
     width: 100px;
@@ -71,13 +80,12 @@ h3 {
 .projects-section {
   @include parallaxBackground('/assets/img/computer_background.png');
 
-  width: 100%;
-  padding: 50px 30px;
+  padding: 30px 30px;
   color: $section-header-color;
 
   img {
     width: auto;
-    height: 250px;
+    height: 300px;
   }
   .projects {
     padding: 0 15px;
