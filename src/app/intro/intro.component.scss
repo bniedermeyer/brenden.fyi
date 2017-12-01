@@ -6,6 +6,7 @@
     background-image: url($backgroundImgPath);
   }
   height: 100vh;
+  overflow-x: hidden;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,11 +17,6 @@
     background-attachment: scroll;
   }
 
-
-/*  @media only screen and (max-width: 960px) {
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }*/
 }
 
 $section-header-color: #c8d9db;
