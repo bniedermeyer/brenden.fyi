@@ -1,27 +1,4 @@
-@mixin parallaxBackground($backgroundImgPath, $fade: false) {
-  @if $fade == true {
-    background-image: url($backgroundImgPath);
-    opacity: 0.7;
-  } @else {
-    background-image: url($backgroundImgPath);
-  }
-  height: 100vh;
-  overflow-x: hidden;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  // help mobile devices
-  @media only screen and (max-device-width: 1024px) {
-    background-attachment: scroll;
-  }
-
-}
-
 $section-header-color: #c8d9db;
-
-
 
 h1 {
   font-size: 5em;
@@ -49,8 +26,11 @@ h3 {
 
 
 .greeting-section {
-  @include parallaxBackground('/assets/img/pilatus_background.png', true);
-
+  background-image: url('/assets/img/pilatus_background.png');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  opacity: 0.7;
   .greeting {
     color: $section-header-color;
 
@@ -74,18 +54,18 @@ h3 {
 }
 
 .projects-section {
-  @include parallaxBackground('/assets/img/computer_background.png');
-
-  padding: 30px 30px;
+  background-image: url('/assets/img/computer_background.png');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
   color: $section-header-color;
+  text-align: center;
 
   img {
     width: auto;
     height: 300px;
   }
-  .projects {
-    padding: 0 15px;
-  }
+
 }
 
 

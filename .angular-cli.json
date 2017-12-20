@@ -19,13 +19,16 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.scss"
+        "styles.scss",
+        "../node_modules/fullpage.js/dist/jquery.fullpage.css"
       ],
       "stylePreprocessorOptions": {
         "includePaths": [
         ]
       },
       "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/fullpage.js/dist/jquery.fullpage.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
