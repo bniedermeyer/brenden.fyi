@@ -56,14 +56,17 @@ h3 {
 .projects-section {
   background-image: url('/assets/img/computer_background.png');
   background-size: cover;
-  background-attachment: fixed;
   height: 100vh;
   color: $section-header-color;
   text-align: center;
-
   img {
     width: auto;
     height: 300px;
+  }
+
+  span {
+    font-size: 2em;
+    font-weight: 300;
   }
 
 }
