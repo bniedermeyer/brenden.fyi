@@ -1,3 +1,5 @@
+@import "../../theme";
+
 $section-header-color: #c8d9db;
 
 h1 {
@@ -71,4 +73,14 @@ h3 {
 
 }
 
+.connect-section {
+  background-color: #00b3ee;
+  padding: 25px;
+}
+
+.social-links {
+  color: mat-color($md-bn-primary, 400);
+  text-decoration: none;
+  font-size: 4em;
+}
 

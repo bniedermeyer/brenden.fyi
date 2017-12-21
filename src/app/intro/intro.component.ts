@@ -15,7 +15,8 @@ export class IntroComponent implements OnInit {
       $('#fullpage').fullpage({
         css3: false,
         fitToSection: true,
-        scrollBar: false
+        scrollBar: false,
+        autoScrolling: true
       });
     });
   }

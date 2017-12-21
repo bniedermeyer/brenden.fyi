@@ -11,8 +11,8 @@
   <div [ngClass.gt-sm]="'section fp-auto-height'"
        [ngClass.lt-sm]="'section'">
     <div id="skill-section" class="skill-section" fxLayout="column" fxLayoutAlign="center center">
-      <div class="skills" fxLayout="row" fxLayoutAlign="center center" fxLayoutWrap fxLayout.lt-md="column"
-           fxLayoutAlign.lt-md="start center" fxLayoutGap="10px">
+      <div class="skills" fxLayout="row" fxLayoutAlign="center center" fxLayoutWrap fxLayout.lt-sm="column"
+           fxLayoutAlign.lt-sm="start center" fxLayoutGap="10px">
         <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="10px" fxLayoutGap.lt-md="30px">
           <img src="/assets/img/logos/html5.png"
                alt="html5 logo" class="skill">
@@ -42,18 +42,28 @@
   </div>
   <div class="section">
     <div id="projects-section" class="projects-section">
-      <div id="pomodoro" class="project slide">
-        <a href="https://s.codepen.io/bniedermeyer/debug/xwqBOM/NQAzYnWyPdmr">
-          <img src="/assets/img/pomodoro.png" alt="pomodoro project"></a>
+      <div class="projects">
+        <div id="pomodoro" class="project slide">
+          <a href="https://s.codepen.io/bniedermeyer/debug/xwqBOM/NQAzYnWyPdmr">
+            <img src="/assets/img/pomodoro.png" alt="pomodoro project"></a>
+        </div>
+        <div id="seattle-counselors" class="project slide">
+          <a href="https://www.seattlecounselors.org">
+            <img src="/assets/img/sca.png" alt="seattle counselors association project"></a>
+        </div>
+        <div id="calculator" class="project slide">
+          <a href="https://s.codepen.io/bniedermeyer/debug/RrwmzL/yoAZEQxVaZmr">
+            <img src="/assets/img/calculator.png" alt="calculator project"></a>
+        </div>
       </div>
-      <div id="seattle-counselors" class="project slide">
-        <a href="https://www.seattlecounselors.org">
-          <img src="/assets/img/sca.png" alt="seattle counselors association project"></a>
-      </div>
-      <div id="calculator" class="project slide">
-        <a href="https://s.codepen.io/bniedermeyer/debug/RrwmzL/yoAZEQxVaZmr">
-          <img src="/assets/img/calculator.png" alt="calculator project"></a>
-      </div>
+    </div>
+  </div>
+  <div class="connect-section section fp-auto-height">
+    <h1>Let's Connect!</h1>
+    <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+      <a href="https://www.linkedin.com/in/bniedermeyer"><i class="fa fa-lg fa-linkedin-square social-links"
+                                                            aria-hidden="true"></i></a>
+      <a href="https://www.github.com/bniedermeyer"><i class="fa fa-lg fa-github social-links" aria-hidden="true"></i></a>
     </div>
   </div>
 </div>
