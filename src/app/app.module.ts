@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -10,29 +11,20 @@ import { HeaderComponent } from './header/header.component';
 import { ResumeModule } from './resume/resume.module';
 import { AppMaterialComponentsModule } from './app-material-components.module';
 import { OverlayComponent } from './shared/overlay/overlay.component';
-import { IntroComponent } from './intro/intro.component'
-
+import { IntroComponent } from './intro/intro.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    OverlayComponent,
-    IntroComponent,
-
-  ],
-  imports:      [
+  declarations: [AppComponent, HeaderComponent, OverlayComponent, IntroComponent],
+  imports: [
     BrowserModule,
     AppRoutingModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
     AppMaterialComponentsModule,
     ResumeModule,
+    HttpClientModule
   ],
-  providers:    [
-    {provide: MATERIAL_COMPATIBILITY_MODE, useValue: true}
-  ],
-  bootstrap:    [AppComponent],
+  providers: [{ provide: MATERIAL_COMPATIBILITY_MODE, useValue: true }],
+  bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule {}

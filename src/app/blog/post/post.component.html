@@ -1,3 +1,3 @@
-<p>
-  post works!
-</p>
+<h1>{{ blogTitle | async}}</h1>
+<h2>{{ blogDate | async | date }}</h2>
+<div [innerHtml]="blogContent | async"></div>
