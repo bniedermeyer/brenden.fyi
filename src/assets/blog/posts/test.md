@@ -14,9 +14,31 @@ This is some text about some stuff that happened sometime ago
 - ordered
 - list
 
-```
-const testCodeBlock = ()
- => {
+
+1. oh
+1. look
+1. a
+1. numbered
+1. # LIST
+
+```typescript
+const testCodeBlock = () => {
  // this is a code block
  };
  ```
+
+```scss
+.test-class {
+  color: blue;
+}
+
+#test-id {
+  font-weight: 600;
+}
+```
+
+```html
+<div class="test-class">
+  <span>This is a test html code block!</span>
+</div>
+```
