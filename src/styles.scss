@@ -2,6 +2,8 @@
 //@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import 'variables';
 @import '~@angular/material/theming';
+@import "~highlight.js/styles/default.css";
+@import "~highlight.js/styles/monokai.css";
 @import 'theme';
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://fonts.googleapis.com/css?family=Dosis|Open+Sans');
