@@ -15,8 +15,8 @@ import { BlogAttributes, BlogPost } from './post.model';
 })
 export class PostComponent implements OnInit {
   blogContent: Observable<string>;
-  blogTitle: Observable<string>;
-  blogDate: Observable<string>;
+  postTitle: Observable<string>;
+  postDate: Observable<string>;
 
   constructor(private blogService: BlogService, private route: ActivatedRoute) {}
 
@@ -34,10 +34,10 @@ export class PostComponent implements OnInit {
     };
     marked.setOptions({ renderer });
 
-    this.blogService.parseBlogPost(postName).subscribe(blogPost => {
+    this.blogService.parseBlogPost(postName).subscribe((blogPost: BlogPost) => {
       this.blogContent = of(marked.parse(blogPost.body));
-      this.blogTitle = of((<BlogAttributes>blogPost.attributes).postTitle);
-      this.blogDate = of((<BlogAttributes>blogPost.attributes).date);
+      this.postTitle = of(blogPost.attributes.postTitle);
+      this.postDate = of(blogPost.attributes.date);
     });
   }
 }
