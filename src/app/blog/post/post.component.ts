@@ -31,7 +31,7 @@ export class PostComponent implements OnInit {
       // Render the highlighted code with `hljs` class.
       return `<pre><code class="hljs ${language}">${highlighted}</code></pre>`;
     };
-    marked.setOptions({ renderer });
+    this.mkd.setOptions({ renderer });
     this.blogPost = this.blogService.parseBlogPost(postName);
   }
 }
