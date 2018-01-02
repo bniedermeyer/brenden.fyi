@@ -1,12 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
-import { of } from 'rxjs/observable/of';
 import * as marked from 'marked';
 import * as highlightjs from 'highlight.js';
 
 import { BlogService } from '../blog.service';
-import { BlogAttributes, BlogPost } from './post.model';
+import { BlogPost } from './post.model';
 
 @Component({
   selector: 'app-post',
@@ -14,9 +13,8 @@ import { BlogAttributes, BlogPost } from './post.model';
   styleUrls: ['./post.component.scss']
 })
 export class PostComponent implements OnInit {
-  blogContent: Observable<string>;
-  postTitle: Observable<string>;
-  postDate: Observable<string>;
+  blogPost: Observable<BlogPost>;
+  private mkd = marked;
 
   constructor(private blogService: BlogService, private route: ActivatedRoute) {}
 
@@ -33,11 +31,6 @@ export class PostComponent implements OnInit {
       return `<pre><code class="hljs ${language}">${highlighted}</code></pre>`;
     };
     marked.setOptions({ renderer });
-
-    this.blogService.parseBlogPost(postName).subscribe((blogPost: BlogPost) => {
-      this.blogContent = of(marked.parse(blogPost.body));
-      this.postTitle = of(blogPost.attributes.postTitle);
-      this.postDate = of(blogPost.attributes.date);
-    });
+    this.blogPost = this.blogService.parseBlogPost(postName);
   }
 }
