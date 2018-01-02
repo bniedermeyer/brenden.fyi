@@ -14,6 +14,7 @@ import { BlogPost } from './post.model';
 })
 export class PostComponent implements OnInit {
   blogPost: Observable<BlogPost>;
+  // binding marked to a variable so it's accessible in the template
   private mkd = marked;
 
   constructor(private blogService: BlogService, private route: ActivatedRoute) {}
