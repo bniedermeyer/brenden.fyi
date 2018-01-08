@@ -5,7 +5,7 @@
 <div *ngFor="let position of positions" class="position">
   <hr class="">
   <div><span *ngIf="position.current"><i class="fa fa-circle fa-fw "></i></span><span
-    class="title">{{position.title}}</span>
+    class="title-section">{{position.title}}</span>
     <div class="company">{{position.company}}</div>
   </div>
   <div class="date">{{position.dateStart | date: 'MMM, yyyy'}} - <span

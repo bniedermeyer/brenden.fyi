@@ -1,4 +1,5 @@
-<div fxLayout.gt-sm="row" fxLayout="column"  fxLayoutAlign="space-around start" fxLayoutGap="20px">
+<div class="blog-dashboard" fxLayout.gt-sm="row" fxLayout="column"  fxLayoutAlign="space-around start" fxLayoutGap="20px">
+  <!--Previous posts-->
   <div *ngIf="(posts | async)?.length > 1" class="old-posts">
     <h2 fxFlexAlign="start">Older Posts</h2>
     <div fxFlexAlign="start" fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="start center">
@@ -11,13 +12,14 @@
       </a>
     </div>
   </div>
+  <!-- Latest Post-->
   <div *ngFor="let post of (posts | async | slice:0:1)" [routerLink]="['/blog/post/' + post.documentName]" fxFlexAlign="start">
     <mat-card class="latest-post" fxFlex>
       <mat-card-title><a class="post-title" [routerLink]="['/blog/post/' + post.documentName]">{{post.postTitle}}</a></mat-card-title>
       <mat-card-subtitle>{{post.date | date}}</mat-card-subtitle>
       <img mat-card-image [src]="post.thumbnail" [alt]="post.postTitle + '\'s preview image.'">
       <mat-card-content>{{post.intro}}</mat-card-content>
-      <mat-card-actions><a [routerLink]="['/blog/post/' + post.documentName]">Read More...</a></mat-card-actions>
+      <mat-card-actions align="end"><a [routerLink]="['/blog/post/' + post.documentName]">Read More...</a></mat-card-actions>
     </mat-card>
   </div>
 </div>
