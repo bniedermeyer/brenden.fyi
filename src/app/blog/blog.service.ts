@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import { map } from 'rxjs/operators';
 import * as fm from 'front-matter';
 
-import { BlogAttributes, BlogPost } from './post/post.model';
+import { BlogAttributes, BlogPost, BlogPostMetadata } from './post/post.model';
 
 /**
  * This service helps load a blog post from a markdown file
@@ -33,5 +33,13 @@ export class BlogService {
         return blog;
       })
     );
+  }
+
+  /**
+   * Returns a list of metadata about all blog posts.
+   * @returns {Observable<BlogPostMetadata[]>}
+   */
+  getBlogPosts(): Observable<BlogPostMetadata[]> {
+    return this.http.get<BlogPostMetadata[]>('/assets/blog/blog-index.json');
   }
 }

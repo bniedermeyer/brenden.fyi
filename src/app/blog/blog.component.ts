@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+
+import { BlogService } from './blog.service';
+import { BlogPostMetadata } from './post/post.model';
 
 @Component({
   selector: 'app-blog',
@@ -6,10 +10,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent implements OnInit {
+  posts: Observable<BlogPostMetadata[]>;
 
-  constructor() { }
+  constructor(private blogService: BlogService) {}
 
   ngOnInit() {
+    this.posts = this.blogService.getBlogPosts();
   }
-
 }

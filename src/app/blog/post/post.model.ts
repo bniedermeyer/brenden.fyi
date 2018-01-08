@@ -8,3 +8,11 @@ export interface BlogPost {
   body: string;
   frontmatter: string;
 }
+
+export interface BlogPostMetadata {
+  postTitle: string;
+  intro: string;
+  date: string;
+  thumbnail: string;
+  documentName: string;
+}

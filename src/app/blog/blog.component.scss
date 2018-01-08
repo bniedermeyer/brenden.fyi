@@ -1,0 +1,26 @@
+a {
+  text-decoration: none;
+}
+.old-posts {
+  position: sticky;
+  top: 0;
+}
+.post-card {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  img {
+    object-fit: cover;
+    height: 45px;
+  }
+}
+
+.latest {
+  .post-title {
+    text-decoration: none;
+  }
+  img {
+    object-fit: cover;
+    height: 100px !important;
+  }
+}
