@@ -1,8 +1,16 @@
 .title-section {
-  height: 80px;
-  position: sticky;
-  top: 0;
   .title {
     font-size: 3em;
   }
+}
+@media screen and (min-width: 900px){
+  .title-section {
+    position: sticky;
+    top: 0;
+  }
+}
+
+
+.blog-post{
+  padding: 20px;
 }
