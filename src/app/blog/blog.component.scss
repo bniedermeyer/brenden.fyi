@@ -3,11 +3,9 @@ a {
 }
 .blog-dashboard {
   padding: 10px;
+  overflow-y: scroll;
 }
-.old-posts {
-  position: sticky;
-  top: 0;
-}
+
 .post-card {
   width: 150px;
   height: 150px;
@@ -21,5 +19,11 @@ a {
 .latest-post {
   .post-title {
     text-decoration: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  .old-posts {
+    position: sticky;
+    top: 0;
   }
 }

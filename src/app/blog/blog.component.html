@@ -1,9 +1,9 @@
-<div class="blog-dashboard" fxLayout.gt-sm="row" fxLayout="column"  fxLayoutAlign="space-around start" fxLayoutGap="20px">
+<div class="blog-dashboard" fxLayout.gt-sm="row" fxLayout="column"  fxLayoutAlign="space-around start" fxLayoutGap="10px">
   <!--Previous posts-->
-  <div *ngIf="(posts | async)?.length > 1" class="old-posts">
+  <div *ngIf="(posts | async)?.length > 1" class="old-posts" fxFlexOrder.lt-md="2">
     <h2 fxFlexAlign="start">Older Posts</h2>
-    <div fxFlexAlign="start" fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="start center">
-      <a *ngFor="let post of (posts | async | slice:1)" [routerLink]="['/blog/post/' + post.documentName]">
+    <div fxFlexAlign="start" fxLayout="column" fxLayout.lt-md="row" fxLayoutWrap.lt-md fxLayoutGap="20px" fxLayoutAlign="start center" fxLayoutAlign.lt-md="center center">
+      <a *ngFor="let post of (posts | async | slice:1:5)" [routerLink]="['/blog/post/' + post.documentName]">
         <mat-card class="post-card">
           <img mat-card-image [src]="post.thumbnail" [alt]="post.postTitle + '\'s preview image.'">
           <mat-card-title>{{post.postTitle}}</mat-card-title>
@@ -13,7 +13,7 @@
     </div>
   </div>
   <!-- Latest Post-->
-  <div *ngFor="let post of (posts | async | slice:0:1)" [routerLink]="['/blog/post/' + post.documentName]" fxFlexAlign="start">
+  <div *ngFor="let post of (posts | async | slice:0:1)" [routerLink]="['/blog/post/' + post.documentName]" fxFlexAlign="start" fxFlexOrder.lt-md="1">
     <mat-card class="latest-post" fxFlex>
       <mat-card-title><a class="post-title" [routerLink]="['/blog/post/' + post.documentName]">{{post.postTitle}}</a></mat-card-title>
       <mat-card-subtitle>{{post.date | date}}</mat-card-subtitle>
