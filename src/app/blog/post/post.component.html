@@ -3,7 +3,7 @@
     <h1 class="title">{{ post.attributes.postTitle }}</h1>
     <h3>{{ post.attributes.date | date }}</h3>
   </div>
-  <div class="blog" fxFlex.gt-md="60%">
+  <div class="post" fxFlex.gt-md="75%">
     <div [innerHtml]="mkd(post.body) | safeHtml"></div>
   </div>
 </div>
