@@ -1,0 +1,11 @@
+<div class="blog-post" fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="space-around start" *ngIf="blogPost | async as post" >
+  <div class="title-section">
+    <h1 class="title">{{ post.attributes.postTitle }}</h1>
+    <h3>{{ post.attributes.date | date }}</h3>
+  </div>
+  <div class="post" fxFlex.gt-md="75%">
+    <div [innerHtml]="mkd(post.body) | safeHtml"></div>
+  </div>
+</div>
+
+

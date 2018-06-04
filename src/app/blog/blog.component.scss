@@ -1,0 +1,30 @@
+a {
+  text-decoration: none;
+}
+.blog-dashboard {
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.post-card {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  img {
+    object-fit: cover;
+    height: 80px;
+  }
+}
+
+.latest-post {
+  .post-title {
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  .old-posts {
+    position: sticky;
+    top: 0;
+  }
+}
+

@@ -2,9 +2,11 @@
 //@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import 'variables';
 @import '~@angular/material/theming';
+@import "~highlight.js/styles/default.css";
+@import "~highlight.js/styles/monokai.css";
 @import 'theme';
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-
+@import url('https://fonts.googleapis.com/css?family=Dosis|Open+Sans');
 // material theme
 @include mat-core();
 @include angular-material-theme($theme);
@@ -16,9 +18,23 @@
 html, body, app-root, mat-sidenav-container, router-outlet {
   margin: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 mat-sidenav {
   background-color: mat-color($primary) !important;
 }
+
+html, body {
+  font-size: 14px;
+
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.dosis {
+  font-family: 'Dosis', sans-serif;
+}
+

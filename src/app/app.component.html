@@ -1,14 +1,14 @@
 <mat-sidenav-container>
   <!--Top navbar for mobile-->
-  <mat-toolbar  fxHide color="primary">
+  <mat-toolbar  fxHide fxShow.lt-md color="primary">
     <span fxFlex>Brenden Niedermeyer</span>
     <button mat-icon-button fxHide fxShow.xs (click)="sidenav.open()">
       <mat-icon>menu</mat-icon>
     </button>
     <div fxFlex fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="end" fxHide fxShow.gt-xs>
-      <mat-list-item><a href="#">Home</a></mat-list-item>
-      <mat-list-item><a href="#">Thoughts</a></mat-list-item>
-      <mat-list-item><a href="#">Resume</a></mat-list-item>
+      <mat-list-item><a [routerLink]="'/'">Home</a></mat-list-item>
+      <mat-list-item><a [routerLink]="'/blog'">Thoughts</a></mat-list-item>
+      <mat-list-item><a [routerLink]="'/resume'">Resume</a></mat-list-item>
       <mat-list-item fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
         <a href="https://www.linkedin.com/in/bniedermeyer"><i class="fa fa-lg fa-linkedin-square social-links"
                                                               aria-hidden="true"></i></a>
@@ -17,12 +17,12 @@
     </div>
   </mat-toolbar>
   <!--Sidebar for non-mobile layouts-->
-  <mat-sidenav #sidenav [opened]="opened" [mode]="navbarMode" align="end" fxFlex fxLayout="column"
+  <mat-sidenav #sidenav [opened]="opened" [mode]="navbarMode" align="end" fxLayout="column"
               fxLayoutAlign="center center">
     <mat-list-item class="mat-title">Brenden Niedermeyer</mat-list-item>
-    <mat-list-item><a href="#" class="mat-title">Home</a></mat-list-item>
-    <mat-list-item><a href="#" class="mat-title">Thoughts</a></mat-list-item>
-    <mat-list-item><a href="#" class="mat-title">Resume</a></mat-list-item>
+    <mat-list-item><a [routerLink]="'/'" class="mat-title">Home</a></mat-list-item>
+    <mat-list-item><a [routerLink]="'/blog'" class="mat-title">Thoughts</a></mat-list-item>
+    <mat-list-item><a [routerLink]="'/resume'" class="mat-title">Resume</a></mat-list-item>
     <mat-list-item fxFlex="5"></mat-list-item>
     <mat-list-item fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="50px">
       <a href="https://www.linkedin.com/in/bniedermeyer"><i class="fa fa-2x fa-linkedin-square social-links"
@@ -32,5 +32,5 @@
     </mat-list-item>
   </mat-sidenav>
   <!--main site content-->
-  <router-outlet></router-outlet>
+  <router-outlet fxFlex></router-outlet>
 </mat-sidenav-container>
