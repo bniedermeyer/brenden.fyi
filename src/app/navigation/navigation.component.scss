@@ -1,0 +1,40 @@
+
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  box-shadow: -3px 0 6px rgba(0,0,0,.24);
+}
+
+.mobile-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 10px 47px 0px rgba(0,0,0,0.24);
+}
+
+.nav-link{
+  color: white;
+}
+.social {
+  position: fixed;
+  bottom: 15px;
+  left: 70px;
+}
+
+.mobile-social {
+  position: fixed;
+  right: 10px;
+}
+
+#brenden-niedermeyer-name {
+  position: fixed;
+  left: 43px;
+}
+
+.nav-container {
+  height: 100%;
+}

@@ -2,35 +2,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MATERIAL_COMPATIBILITY_MODE } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
 import { ResumeModule } from './resume/resume.module';
 import { AppMaterialComponentsModule } from './app-material-components.module';
-import { OverlayComponent } from './shared/overlay/overlay.component'
-
+import { NavigationComponent } from './navigation/navigation.component';
+import { SocialLinksComponent } from './navigation/social-links/social-links.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    OverlayComponent,
-
-  ],
-  imports:      [
+  declarations: [AppComponent, NavigationComponent, SocialLinksComponent],
+  imports: [
     BrowserModule,
     AppRoutingModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
     AppMaterialComponentsModule,
-    ResumeModule,
+    ResumeModule
   ],
-  providers:    [
-    {provide: MATERIAL_COMPATIBILITY_MODE, useValue: true}
-  ],
-  bootstrap:    [AppComponent],
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule {}

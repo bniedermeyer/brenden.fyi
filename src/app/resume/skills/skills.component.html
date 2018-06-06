@@ -5,7 +5,7 @@
 <div class="skill" *ngFor="let skill of skills">
   <hr class="">
   <div class="skill-name">{{ skill.name }}</div>
-  <div fxLayout="row" fxLayoutGap="5px" fxLayoutWrap>
+  <div fxLayout="row wrap" fxLayoutGap="5px"  >
     <div class="skill-highlight" *ngFor="let highlight of skill.highlights">{{ highlight }}</div>
   </div>
 </div>

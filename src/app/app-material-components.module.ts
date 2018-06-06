@@ -1,3 +1,4 @@
+import { LayoutModule } from '@angular/cdk/layout';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
@@ -13,7 +14,8 @@ import {
     MatListModule,
     MatSidenavModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    LayoutModule,
   ],
   exports: [MatToolbarModule, MatCardModule, MatListModule, MatSidenavModule, MatIconModule, MatButtonModule]
 })

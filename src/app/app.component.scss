@@ -2,7 +2,7 @@
 @import "../theme";
 @import "../variables";
 
-mat-sidenav-container {
+/*mat-sidenav-container {
   margin:0;
   padding: 0;
 
@@ -22,9 +22,9 @@ mat-list-item {
     color: inherit;
     text-decoration: none;
   }
-}
+}*/
 
-.social-links {
+.social-link {
   color: mat-color($md-bn-primary, 400);
   text-decoration: none;
 }
