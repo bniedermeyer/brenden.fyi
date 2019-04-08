@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "server": "nodemon dist/server.js",
-    "build-prod": "rimraf dist && ng build --prod && tsc src/server.ts --outDir 'dist'"
+    "build-prod": "rimraf dist && ng build --prod && tsc src/server.ts --outDir 'dist'",
+    "deploy": "npm run build-prod && gh-pages -d dist"
   },
   "private": true,
   "dependencies": {
@@ -44,6 +45,7 @@
     "@angular/language-service": "^6.1.4",
     "@types/jasmine": "2.5.45",
     "@types/node": "^6.0.90",
+    "gh-pages": "^2.0.1",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "^1.7.1",
