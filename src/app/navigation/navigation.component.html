@@ -6,34 +6,55 @@
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="!(isHandset$ | async)"
-    position="end">
+    position="end"
+  >
     <div class="nav-container" fxLayout="column" fxLayoutAlign="center">
       <mat-toolbar color="primary">
-        <div *ngIf="!(isHandset$ | async)" fxLayout="column" id="brenden-niedermeyer-name" >
+        <div
+          *ngIf="!(isHandset$ | async)"
+          fxLayout="column"
+          id="brenden-niedermeyer-name"
+        >
           <div fxFlexAlign="center">Brenden</div>
           <div fxFlexAlign="center">Niedermeyer</div>
         </div>
       </mat-toolbar>
-      <mat-nav-list fxLayout="column" >
-        <a mat-list-item routerLink="/" class="nav-link" fxFlexAlign="center">Resume</a>
-        <a mat-list-item href="https://medium.com/@brenden.niedermeyer" class="nav-link" fxFlexAlign="center">Blog</a>
+      <mat-nav-list fxLayout="column">
+        <a mat-list-item routerLink="/" class="nav-link" fxFlexAlign="center"
+          >Resume</a
+        >
+        <a
+          mat-list-item
+          href="https://brenden.codes"
+          class="nav-link"
+          fxFlexAlign="center"
+          >Blog</a
+        >
         <!--<a mat-list-item href="#" class="nav-link" fxFlexAlign="center">Talks</a>-->
       </mat-nav-list>
     </div>
     <app-social-links class="social" iconSize="fa-2x"></app-social-links>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary" *ngIf="isHandset$ | async" id="mobile-toolbar" class="mobile-toolbar">
+    <mat-toolbar
+      color="primary"
+      *ngIf="(isHandset$ | async)"
+      id="mobile-toolbar"
+      class="mobile-toolbar"
+    >
       <button
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
-        >
+      >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>Brenden Niedermeyer</span>
-      <app-social-links class="mobile-social" iconSize="fa-lg"></app-social-links>
+      <app-social-links
+        class="mobile-social"
+        iconSize="fa-lg"
+      ></app-social-links>
     </mat-toolbar>
     <ng-content></ng-content>
   </mat-sidenav-content>
