@@ -1,13 +1,30 @@
 <mat-card id="contact" fxFlex fxLayout="column" fxLayoutAlign="start center">
-  <img src="assets/img/profile.jpg" id="self-portrait" alt="">
+  <img src="assets/img/profile.jpg" id="self-portrait" alt="" />
   <h3>Brenden Niedermeyer</h3>
   <mat-list>
     <mat-divider fxHide fxShow.gt-md></mat-divider>
-    <mat-list-item><mat-icon mat-list-icon color="accent">place</mat-icon>Seattle, WA</mat-list-item>
-    <mat-list-item><mat-icon mat-list-icon color="accent">call</mat-icon>By Request</mat-list-item>
-    <mat-list-item><mat-icon mat-list-icon color="accent">mail_outline</mat-icon><a href="mailto:me@brenden.fyi">me@brenden.fyi</a></mat-list-item>
-    <mat-list-item><mat-icon mat-list-icon color="accent">language</mat-icon>English, German</mat-list-item>
-    <mat-list-item (click)="handleResumeClick()" class="pointer"><mat-icon mat-list-icon color="accent">file_download</mat-icon>Download PDF</mat-list-item>
+    <mat-list-item
+      ><mat-icon mat-list-icon color="accent">place</mat-icon>Seattle,
+      WA</mat-list-item
+    >
+    <mat-list-item
+      ><mat-icon mat-list-icon color="accent">call</mat-icon>By
+      Request</mat-list-item
+    >
+    <mat-list-item
+      ><mat-icon mat-list-icon color="accent">mail_outline</mat-icon
+      ><a href="mailto:contact@brenden.dev"
+        >contact@brenden.dev</a
+      ></mat-list-item
+    >
+    <mat-list-item
+      ><mat-icon mat-list-icon color="accent">language</mat-icon>English,
+      German</mat-list-item
+    >
+    <mat-list-item (click)="handleResumeClick()" class="pointer"
+      ><mat-icon mat-list-icon color="accent">file_download</mat-icon>Download
+      PDF</mat-list-item
+    >
     <mat-divider fxHide fxShow.gt-md></mat-divider>
   </mat-list>
 </mat-card>

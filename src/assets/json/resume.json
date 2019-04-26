@@ -4,23 +4,25 @@
       "current": true,
       "title": "Front End Developer",
       "company": "Expeditors International of Washington, Inc.",
-      "dateStart":"2017-03-20T00:00:00Z",
-      "dateEnd":"",
+      "dateStart": "2017-03-20T00:00:00Z",
+      "dateEnd": "",
       "description": "Create a functional implementation of the user interface based on static mockups provided by User Experience Design. Ensure UI components and technologies are feasible and ensure consistency across browsers. Work with application developers to identify integration points between view layer and back end. Provide oversight to other developers contributing to the user interface to ensure the interface is developed consistently and utilizes best practices. Create templates, examples, and components for application developers to use as needed. Work together with User Experience Design and Business Analysis to present ideas to business owners. Evangelize the role of front end development within the company. Mentor junior developers. Provide code reviews as needed.",
-      "highlights": ["Designed new interview process for procuring front end development talent.",
+      "highlights": [
+        "Architected and implemented new front end using Angular 6, and ngrx to accommodate new business features.",
+        "Maintain existing webapp written in Angular 4.",
+        "Designed new interview process for procuring front end development talent.",
         "Implemented system monitoring with StackDriver in a Google Cloud environment.",
-        "Integrated StackDriver alerts with Google Cloud Functions to notify development of production issues team via Mattermost.",
-        "Maintain existing webapp written in Angular.",
-        "Designed and implemented new front end using Angular 6, and ngrx to accommodate new business features.",
-        "Designed and implemented CI/CD pipelines using Gitlab CI and Kubernetes."
+        "Integrated StackDriver alerts with Google Cloud Functions to notify development team of production issues via Mattermost.",
+        "Designed and implemented CI/CD pipelines using Gitlab CI and Kubernetes.",
+        "Mentored developers from other teams in front end development"
       ]
     },
     {
       "current": false,
       "title": "Developer III",
       "company": "Expeditors International of Washington, Inc.",
-      "dateStart":"2012-08-12T00:00:00Z",
-      "dateEnd":"2017-03-20T00:00:00Z",
+      "dateStart": "2012-08-12T00:00:00Z",
+      "dateEnd": "2017-03-20T00:00:00Z",
       "description": "Collaborate with systems analyst to develop, test, and deploy EDI translations to ensure successful transmission of messages within the company, between clients, and between government entities. Perform system research as needed. Serve on after-hours on-call rotation. Mentor developers new to the company. Use innovation time to enhance existing Java applications as needed.",
       "highlights": [
         "Traveled to Chennai, India for three months to assist in opening of new regional development center by training and mentoring three developers in webMethods EDI development.",
@@ -34,8 +36,8 @@
       "current": false,
       "title": "Java Certificate Teaching Assistant",
       "company": "University of Washington - Professional and Continuing Education",
-      "dateStart":"2015-10-01T00:00:00Z",
-      "dateEnd":"2015-12-01T00:00:00Z",
+      "dateStart": "2015-10-01T00:00:00Z",
+      "dateEnd": "2015-12-01T00:00:00Z",
       "description": "Assisted professor for introduction to Java Programming course by grading approximately 15 homework assignments a week during the 10 week course.",
       "highlights": [
         "Collaborated with professor to ensure that all students were being held to same expectation for homework quality.",
@@ -48,8 +50,8 @@
       "current": false,
       "title": "Executive President",
       "company": "Residence Hall Association at Washington State University",
-      "dateStart":"2009-05-01T00:00:00Z",
-      "dateEnd":"2011-05-01T00:00:00Z",
+      "dateStart": "2009-05-01T00:00:00Z",
+      "dateEnd": "2011-05-01T00:00:00Z",
       "description": "Served as chief representative of the Association to the University, an organization with ~ $80,000/yearly budget. Ran two weekly meetings. Knowledgeable of all goings on within organization and the rest of campus. Sit on various committees and task force boards with different campus organizations.",
       "highlights": [
         "Also served as Director of Technology and Marketing 2012, RHA Constitutional Review Chair 2009, and Waller Hall VP 2008-2009."
@@ -59,12 +61,10 @@
       "current": false,
       "title": "SPF State Incentive Grant Database Technician",
       "company": "Franklin Pierce School District",
-      "dateStart":"2008-07-01T00:00:00Z",
-      "dateEnd":"2008-08-31T00:00:00Z",
+      "dateStart": "2008-07-01T00:00:00Z",
+      "dateEnd": "2008-08-31T00:00:00Z",
       "description": "Prepared Community Survey for electronic distribution, input both Curriculum and Community Surveys into Access database, communicated with project evaluator as needed. Prepared Community Surveys for bulk mailing.",
-      "highlights": [
-        "Contracted Position"
-      ]
+      "highlights": ["Contracted Position"]
     }
   ],
   "skills": [
@@ -83,12 +83,7 @@
     },
     {
       "name": "Application Development",
-      "highlights": [
-        "WebMethods",
-        "Java",
-        "SQL (MySQL, DB2)",
-        "NoSQL"
-      ]
+      "highlights": ["WebMethods", "Java", "SQL (MySQL, DB2)", "NoSQL"]
     },
     {
       "name": "Infrastructure",
@@ -97,9 +92,11 @@
         "Google App Engine",
         "Kubernetes",
         "Stackdriver",
+        "Gitlab",
         "Gitlab CI/CD",
         "Git",
-        "SVN"
+        "SVN",
+        "Kong"
       ]
     }
   ],
@@ -109,10 +106,7 @@
       "degree": "Business Administration - Management Information Systems, Bachelor of Arts",
       "startDate": "2007-08-01T00:00:00Z",
       "endDate": "2012-08-01T00:00:00Z",
-      "minors": [
-        "German Minor",
-        "Music Composition Minor"
-      ]
+      "minors": ["German Minor", "Music Composition Minor"]
     },
     {
       "name": "University of Washington - Professional and Continuing Education",
@@ -149,16 +143,23 @@
   ],
   "projects": [
     {
+      "name": "json-server-schematics",
+      "inProgress": false,
+      "url": "https://github.com/bniedermeyer/json-server-schematics",
+      "description": "A set of Angular CLI schematics to quickly setup and configure JSON Server for Angular projects with minimal effort that include examples. ",
+      "technologiesUsed": [
+        "Angular Schematics",
+        "ES6",
+        "Angular CLI",
+        "JSON Server"
+      ]
+    },
+    {
       "name": "Timerize",
       "inProgress": false,
       "url": "https://github.com/bniedermeyer/timerize",
       "description": "A time tracking app to track how long you spend on different activities or projects during the day. Built Timer class to track passage of time and perform basic timer functions.",
-      "technologiesUsed": [
-        "React.js",
-        "ES6",
-        "Sass",
-        "JQuery"
-      ]
+      "technologiesUsed": ["React.js", "ES6", "Sass", "JQuery"]
     },
     {
       "name": "WizQuote",
