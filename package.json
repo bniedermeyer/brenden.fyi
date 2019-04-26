@@ -12,7 +12,7 @@
     "server": "nodemon dist/server.js",
     "build-prod:server": "rimraf dist && ng build --prod && tsc src/server.ts --outDir 'dist'",
     "build-prod": "rimraf dist && ng build --prod",
-    "deploy": "npm run build-prod && gh-pages -d dist"
+    "deploy": "npm run build-prod && cp CNAME dist && gh-pages -d dist"
   },
   "private": true,
   "dependencies": {
