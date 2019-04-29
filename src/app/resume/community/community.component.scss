@@ -1,0 +1,23 @@
+@import '../../../variables';
+
+@include section-title();
+
+.position {
+  @include indent();
+
+  .title {
+    font-size: $item-header-font-size;
+    font-weight: 500;
+  }
+
+  .company {
+    font-size: $item-header-font-size;
+    color: #12a5f4;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  ul {
+    list-style: circle;
+  }
+}

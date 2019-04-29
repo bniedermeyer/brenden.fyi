@@ -1,0 +1,24 @@
+<div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="5px">
+  <mat-icon color="accent">group</mat-icon>
+  <h3>Community</h3>
+</div>
+<div *ngFor="let position of positions" class="position">
+  <hr class="" />
+  <div>
+    <span class="title">{{ position.title }}</span>
+    <div class="company">{{ position.company }}</div>
+  </div>
+  <div class="date">
+    {{ position.dateStart | date: 'MMM, yyyy' }} -
+    <span *ngIf="position.current; then current; else notCurrent"></span>
+  </div>
+  <ng-template #current>Current</ng-template>
+  <ng-template #notCurrent>{{
+    position.dateEnd | date: 'MMM, yyyy'
+  }}</ng-template>
+  <p>{{ position.description }}</p>
+  <h6 *ngIf="position.highlights.length > 0">Highlights:</h6>
+  <ul *ngFor="let highlight of position.highlights">
+    <li>{{ highlight }}</li>
+  </ul>
+</div>

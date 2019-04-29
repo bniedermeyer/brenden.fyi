@@ -11,6 +11,7 @@ import { AwardsComponent } from './awards/awards.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AppMaterialComponentsModule} from '../app-material-components.module';
 import { ResumeService } from './resume.service';
+import { CommunityComponent } from './community/community.component';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import { ResumeService } from './resume.service';
     FlexLayoutModule,
     AppMaterialComponentsModule
   ],
-  declarations: [ResumeComponent, ContactComponent, WorkExperienceComponent, SkillsComponent, EducationComponent, AwardsComponent, ProjectsComponent],
+  declarations: [ResumeComponent, ContactComponent, WorkExperienceComponent, SkillsComponent, EducationComponent, AwardsComponent, ProjectsComponent, CommunityComponent],
   providers: [ResumeService]
 })
 export class ResumeModule {

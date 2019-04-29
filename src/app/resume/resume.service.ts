@@ -7,12 +7,9 @@ import { Project } from '../shared/project';
 import { Education } from '../shared/education';
 import { Award } from '../shared/award';
 
-
 @Injectable()
 export class ResumeService {
-
-
-  getWorkExperience():  Position[] {
+  getWorkExperience(): Position[] {
     return (<any>resumeData).positions;
   }
 
@@ -32,5 +29,9 @@ export class ResumeService {
     return (<any>resumeData).awards;
   }
 
-  constructor() { }
+  getCommunity(): Position[] {
+    return (<any>resumeData).community;
+  }
+
+  constructor() {}
 }
