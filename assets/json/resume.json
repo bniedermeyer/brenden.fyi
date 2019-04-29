@@ -186,5 +186,29 @@
       "url": "https://codepen.io/bniedermeyer/pen/RrwmzL",
       "description": "A simple calculator built with JQuery."
     }
+  ],
+  "community": [
+    {
+      "current": true,
+      "title": "Co-organizer",
+      "company": "SeattleJS",
+      "dateStart": "2018-01-11T00:00:00Z",
+      "dateEnd": "",
+      "description": "Organize monthly meetup events, which have a regular attendance of approx. 120 attendees, focusing on building the Javascript development community in the Seattle area.",
+      "highlights": [
+        "Select speakers for technical talks that are given during events.",
+        "Drive and organize the group's mentorship program.",
+        "Host monthly in person and online only events."
+      ]
+    },
+    {
+      "current": true,
+      "title": "Assistant Organizer",
+      "company": "Angular Seattle",
+      "dateStart": "2018-01-11T00:00:00Z",
+      "dateEnd": "",
+      "description": "Assist in organizing and planning events for the Angular development community in the Seattle area.",
+      "highlights": []
+    }
   ]
 }
