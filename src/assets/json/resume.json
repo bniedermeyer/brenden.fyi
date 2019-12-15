@@ -2,16 +2,16 @@
   "positions": [
     {
       "current": true,
-      "title": "Front End Developer",
-      "company": "Expeditors International of Washington, Inc.",
+      "title": "Developer III",
+      "company": "Expeditors International of Washington, Inc./Cargo Signal",
       "dateStart": "2017-03-20T00:00:00Z",
       "dateEnd": "",
-      "description": "Create a functional implementation of the user interface based on static mockups provided by User Experience Design. Ensure UI components and technologies are feasible and ensure consistency across browsers. Work with application developers to identify integration points between view layer and back end. Provide oversight to other developers contributing to the user interface to ensure the interface is developed consistently and utilizes best practices. Create templates, examples, and components for application developers to use as needed. Work together with User Experience Design and Business Analysis to present ideas to business owners. Evangelize the role of front end development within the company. Mentor junior developers. Provide code reviews as needed.",
+      "description": "Work on a an application built with Java Microservices, Kubernetes, and Angular to provide security and tracking of freight in transit with IoT devices. Create a functional implementation of the user interface based on static mockups provided by User Experience Design. Ensure UI components and technologies are feasible and ensure consistency across browsers. Work with application developers to identify integration points between view layer and back end. Provide oversight to other developers contributing to the user interface to ensure the interface is developed consistently and utilizes best practices. Create templates, examples, and components for application developers to use as needed. Work together with User Experience Design and Business Analysis to present ideas to business owners. Evangelize the role of front end development within the company. Mentor junior developers. Provide code reviews as needed.",
       "highlights": [
-        "Architected and implemented new front end using Angular 6, and ngrx to accommodate new business features.",
+        "Architected and implemented new front end using Angular 7, and ngrx to accommodate new business features.",
         "Maintain existing webapp written in Angular 4.",
         "Designed new interview process for procuring front end development talent.",
-        "Implemented system monitoring with StackDriver in a Google Cloud environment.",
+        "Implemented system monitoring with StackDriver, Prometheus, and Grafana in a Google Cloud Kubernetes Engine environment.",
         "Integrated StackDriver alerts with Google Cloud Functions to notify development team of production issues via Mattermost.",
         "Designed and implemented CI/CD pipelines using Gitlab CI and Kubernetes.",
         "Mentored developers from other teams in front end development"
@@ -19,7 +19,7 @@
     },
     {
       "current": false,
-      "title": "Developer III",
+      "title": "EDI Developer III",
       "company": "Expeditors International of Washington, Inc.",
       "dateStart": "2012-08-12T00:00:00Z",
       "dateEnd": "2017-03-20T00:00:00Z",
@@ -155,11 +155,17 @@
       ]
     },
     {
-      "name": "Timerize",
+      "name": "angular-seattle",
       "inProgress": false,
-      "url": "https://github.com/bniedermeyer/timerize",
-      "description": "A time tracking app to track how long you spend on different activities or projects during the day. Built Timer class to track passage of time and perform basic timer functions.",
-      "technologiesUsed": ["React.js", "ES6", "Sass", "JQuery"]
+      "url": "https://github.com/angular-seattle/angular-seattle",
+      "description": "A website/PWA for the Angular Seattle meetup group",
+      "technologiesUsed": [
+        "Angular",
+        "ES6",
+        "Angular CLI",
+        "Netlify",
+        "Meetup.com API"
+      ]
     },
     {
       "name": "WizQuote",
@@ -173,12 +179,6 @@
         "MongoDB",
         "Bootstrap"
       ]
-    },
-    {
-      "name": "Wikipedia Viewer",
-      "inProgress": false,
-      "url": "https://codepen.io/bniedermeyer/pen/GZKOpJ",
-      "description": "A simple Wikipedia viewer that allows the user to view a random article or search for a specific article by using Wikipedia's search API."
     },
     {
       "name": "Calculator",
@@ -198,7 +198,7 @@
       "highlights": [
         "Select speakers for technical talks that are given during events.",
         "Drive and organize the group's mentorship program.",
-        "Host monthly in person and online only events."
+        "Host monthly in person and online only events as needed."
       ]
     },
     {
@@ -209,6 +209,20 @@
       "dateEnd": "",
       "description": "Assist in organizing and planning events for the Angular development community in the Seattle area.",
       "highlights": []
+    },
+    {
+      "current": false,
+      "title": "Organizer - New Speaker Support",
+      "company": "CascadiaJS 2019",
+      "dateStart": "2019-09-01T00:00:00Z",
+      "dateEnd": "2019-11-11T00:00:00Z",
+      "description": "Worked with another organizer to help prepare speakers who were giviing their first conference talk at CascadiaJS.",
+      "highlights": [
+        "Helped to set timeline for speaker deliverables to make sure they were best prepared prior to the conference.",
+        "Review talk outlines and slides and provide feedback regarding content, and flow.",
+        "Hosted office hours to address speaker questions.",
+        "Assisted with checkin and other tasks as needed during the conference."
+      ]
     }
   ]
 }
