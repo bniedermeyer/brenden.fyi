@@ -143,10 +143,24 @@
   ],
   "projects": [
     {
+      "name": "Wetterli",
+      "inProgress": false,
+      "url": "https://github.com/bniedermeyer/Wetterli",
+      "description": "A simple mobile application build with React Native. Uses the Dark Sky API to tell you current weather conditions. Uses Begin functions built on AWS to fetch data.",
+      "technologiesUsed": [
+        "React Native",
+        "Expo",
+        "Javascript",
+        "Dark Sky API",
+        "Jest/Enzyme",
+        "Begin Functions"
+      ]
+    },
+    {
       "name": "json-server-schematics",
       "inProgress": false,
       "url": "https://github.com/bniedermeyer/json-server-schematics",
-      "description": "A set of Angular CLI schematics to quickly setup and configure JSON Server for Angular projects with minimal effort that include examples. ",
+      "description": "A set of Angular CLI schematics to quickly setup and configure JSON Server for Angular projects with minimal effort that include examples.",
       "technologiesUsed": [
         "Angular Schematics",
         "ES6",
@@ -155,10 +169,22 @@
       ]
     },
     {
+      "name": "community-schematics",
+      "inProgress": false,
+      "url": "https://github.com/angular-seattle/community-schematics",
+      "description": "A set of Angular CLI schematics to quickly create websites for different community groups. Aimed primarily toward developer meetups.",
+      "technologiesUsed": [
+        "Angular Schematics",
+        "ES6",
+        "Angular CLI",
+        "Meetup.com API"
+      ]
+    },
+    {
       "name": "angular-seattle",
       "inProgress": false,
       "url": "https://github.com/angular-seattle/angular-seattle",
-      "description": "A website/PWA for the Angular Seattle meetup group",
+      "description": "A website/PWA for the Angular Seattle meetup group.",
       "technologiesUsed": [
         "Angular",
         "ES6",
@@ -166,25 +192,6 @@
         "Netlify",
         "Meetup.com API"
       ]
-    },
-    {
-      "name": "WizQuote",
-      "inProgress": false,
-      "url": "",
-      "description": "Built a Node.js based web app for a fake website that would assist users in finding car insurance.",
-      "technologiesUsed": [
-        "Node.js",
-        "Express",
-        "JQuery",
-        "MongoDB",
-        "Bootstrap"
-      ]
-    },
-    {
-      "name": "Calculator",
-      "inProgress": false,
-      "url": "https://codepen.io/bniedermeyer/pen/RrwmzL",
-      "description": "A simple calculator built with JQuery."
     }
   ],
   "community": [
