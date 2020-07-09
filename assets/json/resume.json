@@ -6,9 +6,10 @@
       "company": "Expeditors International of Washington, Inc./Cargo Signal",
       "dateStart": "2017-03-20T00:00:00Z",
       "dateEnd": "",
-      "description": "Work on a an application built with Java Microservices, Kubernetes, and Angular to provide security and tracking of freight in transit with IoT devices. Create a functional implementation of the user interface based on static mockups provided by User Experience Design. Ensure UI components and technologies are feasible and ensure consistency across browsers. Work with application developers to identify integration points between view layer and back end. Provide oversight to other developers contributing to the user interface to ensure the interface is developed consistently and utilizes best practices. Create templates, examples, and components for application developers to use as needed. Work together with User Experience Design and Business Analysis to present ideas to business owners. Evangelize the role of front end development within the company. Mentor junior developers. Provide code reviews as needed.",
+      "description": "Create a functional implementation of the user interface based on static mockups provided by UX Design. Ensure technologies are feasible and ensure consistency across browsers. Work with application developers to identify integration points between the front end and back end applications. Provide oversight to other developers contributing to the user interface to ensure the interface is developed consistently and utilizes best practices. Create templates, examples, and components for application developers to use as needed. Collaborate with UX Design and Business Analysis. Evangelize the role of front end development within the company. Mentor junior developers. Provide code reviews as needed.",
       "highlights": [
-        "Architected and implemented new front end using Angular 7, and ngrx to accommodate new business features.",
+        "Architected and implemented new front end using Angular 8, and ngrx to accommodate new business features.",
+        "Drove adoption of technologies such as NgRx and Ionic",
         "Maintain existing webapp written in Angular 4.",
         "Designed new interview process for procuring front end development talent.",
         "Implemented system monitoring with StackDriver, Prometheus, and Grafana in a Google Cloud Kubernetes Engine environment.",
@@ -123,6 +124,12 @@
   ],
   "awards": [
     {
+      "name": "Certified SAFe 4 Practitioner",
+      "awardingOrg": "Scaled Agile, Inc.",
+      "date": "2019-06-01T00:00:00Z",
+      "description": "The SAFe® Practitioner certification indicates the holder has the skills necessary to define, build, and test increments of value in a short timeframe."
+    },
+    {
       "name": "Notice of Appreciation – Canadian Border Services Agency Project",
       "awardingOrg": "Expeditors International of Washington, Inc.",
       "date": "2014-09-01T00:00:00Z",
@@ -218,12 +225,12 @@
       "highlights": []
     },
     {
-      "current": false,
+      "current": true,
       "title": "Organizer - New Speaker Support",
-      "company": "CascadiaJS 2019",
+      "company": "CascadiaJS 2019/2020",
       "dateStart": "2019-09-01T00:00:00Z",
-      "dateEnd": "2019-11-11T00:00:00Z",
-      "description": "Worked with another organizer to help prepare speakers who were giviing their first conference talk at CascadiaJS.",
+      "dateEnd": "",
+      "description": "Worked with fellow organizers to help prepare speakers give their first conference talk for both 2019 and 2020 editions of the conference.",
       "highlights": [
         "Helped to set timeline for speaker deliverables to make sure they were best prepared prior to the conference.",
         "Review talk outlines and slides and provide feedback regarding content, and flow.",
